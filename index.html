@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Eu te amo </title>
+
+    <script src="assets/jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/estilo.css">
+
+    <link rel="preload" as="image" href="imagens/fundo2.gif">
+    <link rel="preload" as="image" href="imagens/fundo3.gif">
+    <link rel="preload" as="image" href="imagens/fundo4.jpg">
+    <link rel="preload" as="image" href="imagens/fundo7.gif">
+    <link rel="preload" as="image" href="imagens/fundo9.gif">
+    <link rel="preload" as="audio" href="assets/musica.mp3">
+
+</head>
+
+<body class="fundo1">
+
+    <div class="pop-up">
+        <h1 class="text-muted">Título teste</h1>
+        <div>Descriçao teste</div>
+        <section class="text-center">
+            <button class="btn-azul" onclick="mostraPopUp(false)">Fechar</button>
+        </section>
+    </div>
+
+    <div class="container d-flex justify-content-center">
+
+        <div id="tela1" class="tela tela-centro visivel">
+            <h1 class="text-muted">Oi meu amor</h1>
+            <button class="mudaTela btn-azul">Começar</button>
+        </div>
+
+        <div id="tela2" class="tela" fundo="fundo1">
+            <p class="text-muted"><small>Antes de começar<br></small>
+                <br>
+                <strong>Você conhece essa pessoa?</strong>
+            </p>
+            <img src="imagens/tela1.jpg" class="custom" width="150" alt="">
+            <br>
+
+            <button class="mudaTela btn-azul btn-block mt-5" animacao="null" tempoAnimacao="500">Sim</button>
+            <br>
+            <button class="btn-vermelho btn-block"
+                onclick="alert('É obvio que você conhece!!!!');window.location.href='https://www.dicio.com.br/covarde/'; ">Não</button>
+
+        </div>
+
+        <div id="tela3" class="tela">
+            <p><strong>Você conhece essa pessoa?</strong><br> Olhe bem pra essa: <br>Obra prima</p>
+
+            <img src="imagens/tela3.jpg" class="custom" width="150" alt="">
+
+            <br>
+            <button class="mudaTela btn-block btn-azul">Simmmm</button>
+            <br>
+            <button class="btn-block btn-vermelho"
+                onclick="alert('Vem com migue não que você conhece sim.');window.location.href='https://www.dicio.com.br/vacilo/'; ">Não</button>
+        </div>
+
+        <div id="tela4" class="tela">
+            <h2>Espere...</h2>
+
+            <img src="imagens/tela4.jpg" class="custom mb-4" width="150" alt="">
+
+            <p>É a <strong> minha namorada</strong> que está acessando essa página?
+                <br><small class="text-muted" style="font-weight: 700;">Sim, Você mesma Letticia.</small>
+            </p>
+
+            <button class="mudaTela btn-azul">Sim, sou eu</button>
+            <button class="mudaTela btn-vermelho btn-block"
+                onclick="alert('Mesmo você clicando aqui vai passar pra proxima pagina fds');">Não<br> ESSE
+                BOTÃO É
+                GIGANTE!.</button>
+        </div>
+
+        <div id="tela5" class="tela">
+            <p><strong> Se tudo funcionar como o programado você deveria estar ouvindo uma música de fundo.</strong>
+            </p>
+            <hr>
+            <p><small>Quando estiver ouvindo-a, clique no botão.</small></p>
+            <button class="mudaTela btn-azul"
+                onclick="alert('Eu te amo pra sempre\n\nMeu amor todinho');">Continuar</button>
+        </div>
+
+        <div id="tela6" class="invisivel letra2 temporizado tela-centro" fundo="fundo2" style="color: #FFF;"
+            tempo="3000">
+            <div tempo="3000">
+                <p>Bom, então vamos lá...</p>
+            </div>
+            <div tempo="3000">
+                <p>eu queria que você soubesse de algumas coisas.</p>
+            </div>
+            <div tempo="3000">
+                <p>Fiz isso para você.</p>
+            </div>
+            <div tempo="3000" final="true">
+                <p>você merece muito mais que isso, mas eu quis fazer do meu jeito algo do meu coração.</p>
+            </div>
+        </div>
+
+        <div id="tela7" class="invisivel temporizado letra2 tela-centro" fundo="fundo3" style="color: #FFF;"
+            tempo="3000">
+            <div tempo="3000">
+                <p>As vezes é difícil imaginar...</p>
+            </div>
+            <div tempo="4500">
+                <p>a gente ja se conhecia, mas você entrou na minha vida de vez á alguns meses e fez ela ficar muito
+                    melhor sem esforço...</p>
+            </div>
+            <div tempo="2500">
+                <p>e conseguiu me conquistar cada vez mais com o seu jeito...</p>
+            </div>
+            <div tempo="4000">
+                <p>e eu quero estar ao seu lado para o resto da minha vida.</p>
+            </div>
+            <div tempo="2500" final="true">
+                <p>De coração mesmo.</p>
+            </div>
+        </div>
+
+        <div id="tela8" class="tela-centro tela" fundo="fundo4" tempo="6000">
+
+            <p><strong>Eu quero mostrar isso para você.</strong> </p>
+            <p class="letra-vermelha">"Posso?"</p>
+
+            <button class="mudaTela btn-rosa">Continuar</button>
+
+        </div>
+
+        <div id="tela9" class="tela">
+
+            <div class="text-start">
+                <div class="text-center">
+                    <h2 class="letra-vermelha">1. Mensagens</h2>
+                    <img src="imagens/tela8-1.png" alt="">
+                    <p class="letra2" style="font-size: 0.8em;"><strong> Nunca imaginei realmente amar
+                            alguem</strong></p>
+                    <p><strong class="letra-vermelha">mas você me mostrou que eu estava errado.</strong></p>
+                </div>
+                <hr>
+                <p><strong class="letra-vermelha">E quando digo amar</strong>, é a vontade de conhecer, conversar e
+                    me envolver nos seus assuntos, participar em si da sua vida sabe, querer sempre conhecer mais e mais
+                    sobre você, sua familia e etc.</p>
+                <p><strong class="letra-vermelha">Conversas</strong> que mesmo sem entender algumas vezes sobre os
+                    assuntos, você vai e me explica, mesmo as vezes nao tendo muito assunto pra conversar, a gente
+                    consegue se esforçando um pelo outro e acho isso muito lindo.</p>
+                <img src="imagens/tela8-2.png" alt="">
+                <p><strong class="letra-vermelha">O sentimento</strong> que demonstramos um pelo outro eu sinto que é
+                    algo único e diferente, eu ja falei isso antes mas eu amo demais o jeito da gente um com o outro
+                    independente de qualquer coisa.</p>
+                <p><strong class="letra-vermelha">Problemas</strong> eles sempre vão existir, impossivel nao ter
+                    literalmente nenhum, mas so quero que saiba que independente do problema eu vou estar com você e
+                    fazer qualquer coisa pra resolver e sempre conversar sobre para resolvermos juntos.</p>
+
+            </div>
+
+            <button class="mudaTela btn-rosa mt-3">Continuar</button>
+
+        </div>
+        <div id="tela10" class="tela">
+
+            <div class="text-start">
+                <div class="text-center">
+                    <h2 class="letra-vermelha">2. Momentos marcantes</h2>
+                    <img src="imagens/tela5.jpg" alt="">
+                    <p class="letra2" style="font-size: 0.8em;"><strong>Essa é umas das minhas fotos favoritas mesmo com
+                            a figurinha na sua cara.</strong></p>
+                </div>
+                <hr>
+                <p><span class="letra2 letra-vermelha" style="font-size: 1em;">Eu me apaixonei por você mais de uma
+                        vez.</span><br>E cada dia que passa eu me apaixono mais e mais. <strong class="text-muted">Mesmo
+                        com as dificuldades eu quero estar ao seu lado,</strong>quero estar presente em todos os dias e
+                    momentos da sua vida.</p>
+                <p>Cada situação que passamos eu fico mais e mais apaixonado por você, algumas delas foram:
+                </p>
+                <ul>
+                    <li><strong class="letra-vermelha">A primeira vez que a nos encontramos de fato</strong>, sem ser no
+                        seu aniversario, aquele dia foi muito especial para mim, senti que era você e que me apaixonaria
+                        por você o que eventualmente aconteceu mesmo e agora estamos aqui, eu te amando mais que tudo.
+                    </li>
+                    <li><strong class="letra-vermelha">Quando saímos pela primeira vez foi para o divina</strong>, me
+                        lembro perfeitamente da gente conversando e acabamos nem pedindo nada para comer mas so a sua
+                        presença valeu mais que tudo, e eu fui percebendo mais e mais que eu nunca te quis pouco.</li>
+                    <li><strong class="letra-vermelha">No momento atual</strong>, depois de já nos encontramos algumas
+                        vezes e conversarmos todos os dias e bastante, eu vejo que é voce 100000%, passamos algumas
+                        situações chatas mas conseguimos lidar para ficarmos um com o outro e isso eu falo sempre, eu
+                        nunca vou desistir de você e sei que errei algumas vezes mas eu busco sempre melhorar nisso e
+                        nunca mais vou deixar acontecer algo novamente. </li>
+                </ul>
+
+                <hr>
+
+                <div class="text-center">
+                    <p>E esse é só o começo do que quero viver pra sempre com você.</p>
+                    <p><strong class="text-muted">Eu te amo demais minha princesa.</strong></p>
+                </div>
+
+
+
+            </div>
+
+            <button class="mudaTela btn-rosa mt-3">Continuar</button>
+
+        </div>
+
+        <div id="tela11" class="tela">
+
+            <div class="text-left">
+                <div class="text-center">
+                    <h2 class="letra-vermelha">3. Mais Coisas que quero falar</h2>
+                    <img src="imagens/tela2.jpg" alt="">
+                    <p class="letra2" style="font-size: 0.8em;"><strong>Essa foto eu acho muito fofa e dou um sorriso
+                            toda vez que vejo ela, gosto muuuito </strong></p>
+                </div>
+                <hr>
+                <p class="letra-vermelha"><strong>So quis botar essa foto mesmo pq gosto 👍
+                    </strong></p>
+                <p>Mas falando serio, o que você me faz bem e o jeito que você é comigo me faz muito feliz e eu me sinto
+                    super bem sempre.</p>
+                <p>Esse seu jeito me encanta de diversas formas que eu nem consigo explicar, eu so tenho que agradecer
+                    por ter você comigo e ser assim, de verdade eu te amo mais que tudo na vida.</p>
+                <hr>
+                <p>Para mim as coisas simples ja bastam, so de ter a sua presença comigo ja está otimo, quando nao
+                    fazermos nada, quando fazemos ligações. quando saimos, eu gosto de tudo que tenha nós dois juntos.
+                </p>
+                <p class="letra-vermelha"><strong>E sei que você tem esse mesmo pensamento pq ja me falou diversas vezes
+                        e isso so me deixa mais feliz todos os dias.</strong></p>
+                <hr>
+                <p><strong class="letra-vermelha">Você</strong> quem acendeu as chamas no meu coração e as
+                    chamas da curiosidade pelo desconhecido em minha vida.</p>
+                <p><strong class="letra-vermelha">Você</strong> quem me faz querer procurar e pensar em planos de coisas
+                    que podemos fazermos juntos.</p>
+                <hr>
+                <p>As vezes me pego pensando no que teria acontecido se eu não tivesse você.</p>
+                <p>Estaria na mesmice de sempre da minha vida e continuando sem querer me abrir pra nada e coisas novas
+                    como musicas, lugares entre outras coisas que eu nunca tive interesse antes, eu ainda estaria
+                    sentindo um vazio em meu coração, então eu agradeço por tudo que voce ja fez comigo e por estar
+                    comigo agora e para sempre, prometo fazer o meu melhor sempre por nós.</p>
+                <h3 class="letra-vermelha mt-5 mb-5">Você me faz bem e eu te amo infinitamente, eu descobri hoje mais
+                    cedo que é valentine's day, fiquei receoso se isso mudaria algo no pedido se vc aceitaria ou não
+                    mas eu senti que hoje era o dia para isso, me desculpa que não consegui comprar a aliança mas fiz
+                    isso de coração pra você e se aceitar prometo eventualmente te dar a aliança sem falta! Então me
+                    responda vida.</h3>
+
+            </div>
+
+            <button class="mudaTela btn-rosa">Quer namorar comigo?</button>
+
+        </div>
+    </div>
+
+    <!--<script src="assets/js/bootstrap.min.js"></script>-->
+
+    <script src="assets/script.js"></script>
+    <!--<script src="assets/all.min.js"></script>-->
+
+</body>
+
+</html>
